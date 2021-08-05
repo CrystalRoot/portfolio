@@ -1,0 +1,116 @@
+body {
+    font-family: "Neuton", serif;
+}
+
+a, a:hover {
+    color: inherit;
+    text-decoration: none; }
+
+.page-holder {
+    min-height: 100vh;
+}
+.bg-cover {
+    background-size: cover !important;
+}
+.jumbotron {
+    color: white;
+    font-family: "Neuton", serif;
+    font-size:2vw;
+    background-color: rgba(24, 146, 11, 0.7);
+    margin-left: 0px;
+    margin-bottom:0px;
+    padding-left: 1%;
+    letter-spacing: .15em;
+}
+
+footer {
+    color: white;
+    font-family: "Neuton", serif;
+    background-color: rgba(24, 146, 11, 0.7);
+    margin-left: 0px;
+    margin-bottom:0px;
+    padding-top: 1rem;
+    padding-left: 1%;
+    letter-spacing: .15em;
+}
+
+#tagline {
+    color: #bab8b8;
+    font-size: 1.2em;
+    font-family: "Neuton", serif;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+    background-color: #660052;
+    font-weight: 500;
+}
+h1 {
+    margin: 0px;
+    padding: 0px;
+}
+h2 {
+    margin: 0px;
+    padding: 0px;
+}
+.navbar {
+    background-color: darkgreen;
+}
+.btn {
+    font-family: "Neuton", serif;
+}
+li {
+    font-family: "Neuton", serif;
+    font-size: 1.2em;
+}
+.card {
+    margin: 10px 10px;
+    width: 16rem;
+    font-family: "Neuton", serif;
+}
+
+  /* Flip Cards CSS */
+.card-container {
+    display: grid;
+    perspective: 700px;
+}
+
+.card-flip {
+    display: grid;
+    grid-template: 1fr / 1fr;
+    grid-template-areas: "frontAndBack";
+    transform-style: preserve-3d;
+    transition: all 0.7s ease;
+}
+
+.card-flip div {
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+
+.front {
+    grid-area: frontAndBack;
+}
+
+.back {
+    grid-area: frontAndBack;
+    transform: rotateY(-180deg);
+}
+
+.card-container:hover .card-flip {
+    transform: rotateY(180deg);
+}
+
+.card-img-overlay h4 {
+    font-family: "Neuton", serif;
+    padding: 6%;
+}
+
+.card-text {
+    font-family: "Neuton", serif;
+    margin: 2rem;
+    padding: 0px;
+}
+
+.card-title {
+    text-align: center;
+    margin-top: 1rem;
+}
